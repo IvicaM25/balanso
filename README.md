@@ -36,6 +36,18 @@ npm install
 npx expo start
 ```
 
+## Android: instalacija bez računara (APK)
+
+Pravi instalacioni fajl za Android, koji radi bez Expo Go i bez upaljenog računara:
+
+```powershell
+cd $HOME\Documents\balanso
+git pull
+npx eas-cli@latest build -p android --profile preview
+```
+
+Prvi put pita par pitanja: na sve pritisni Enter (Y). Za „Generate a new Android Keystore?“ odgovori **Y**. Build se pravi u Expo oblaku 10–20 minuta (besplatno, nekad se čeka u redu). Na kraju dobiješ **link i QR kod**: otvori ga na Android telefonu, preuzmi `.apk` i instaliraj. Telefon će tražiti dozvolu „Instaliraj nepoznate aplikacije“ za pregledač; dozvoli je.
+
 ## Za razvoj
 
 ```bash
